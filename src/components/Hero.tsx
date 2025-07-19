@@ -1,0 +1,94 @@
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Calendar, Clock, Zap } from "lucide-react";
+import Link from "next/link";
+
+import heroImage from "@/assets/hero-image.png";
+
+const Hero = () => {
+    return (
+        <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+            {/* Background Image */}
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${heroImage.src})` }}
+            >
+                <div className="absolute inset-0 bg-gradient-to-l from-black/85 via-black/70 to-transparent"></div>
+            </div>
+
+            <div className="relative atlas-container z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    {/* Content */}
+                    <div className="text-white space-y-6">
+                        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                            <span className="block">משלוחים</span>
+                            <span className="gradient-text">מקצועיים</span>
+                            <span className="block">מדלת לדלת</span>
+                        </h1>
+
+                        <p className="text-xl text-gray-200 leading-relaxed">
+                            עם אטלס שילוח והפצה תקבלו שירות משלוחים מהיר, אמין
+                            ומקצועי. אנחנו כאן כדי להעביר את החבילות שלכם בבטחה
+                            ובמהירות הרבה ביותר.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Link href="/contact">
+                                <Button className="btn-hero text-lg px-8 py-4 flex items-center space-x-reverse space-x-2">
+                                    <span>הזמן משלוח עכשיו</span>
+                                    <ArrowLeft className="h-5 w-5" />
+                                </Button>
+                            </Link>
+                            <Link href="/services">
+                                <Button
+                                    variant="outline"
+                                    className="text-lg px-8 py-4 bg-white/10 border-white text-white hover:bg-white hover:text-gray-900"
+                                >
+                                    השירותים שאנו מציעים
+                                </Button>
+                            </Link>
+                        </div>
+
+                        {/* Features */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
+                            <div className="flex items-center space-x-reverse space-x-3">
+                                <Zap className="h-8 w-8 text-secondary" />
+                                <div>
+                                    <h3 className="font-semibold">
+                                        משלוח מהיר
+                                    </h3>
+                                    <p className="text-sm text-gray-300">
+                                        עד 3 שעות
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-center space-x-reverse space-x-3">
+                                <Clock className="h-8 w-8 text-secondary" />
+                                <div>
+                                    <h3 className="font-semibold">
+                                        משלוח מהיום להיום
+                                    </h3>
+                                    <p className="text-sm text-gray-300">
+                                        משלוח באותו יום עסקים
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-center space-x-reverse space-x-3">
+                                <Calendar className="h-8 w-8 text-secondary" />
+                                <div>
+                                    <h3 className="font-semibold">
+                                        משלוח בין 1 - 3 ימים
+                                    </h3>
+                                    <p className="text-sm text-gray-300">
+                                        עפ״י דרישת הלקוח
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;
