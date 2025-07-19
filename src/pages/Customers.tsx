@@ -162,7 +162,7 @@ const Customers = () => {
                                     <Quote className="h-8 w-8 text-primary/20 mb-4" />
 
                                     <p className="text-gray-600 mb-6 flex-1 italic leading-relaxed">
-                                        "{testimonial.text}"
+                                        &ldquo;{testimonial.text}&rdquo;
                                     </p>
 
                                     <div className="border-t pt-4">

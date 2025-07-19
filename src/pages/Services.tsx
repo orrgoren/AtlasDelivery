@@ -257,14 +257,14 @@ const Services = () => {
                                 </h3>
                                 <div className="space-y-2 text-gray-600">
                                     <p>
-                                        <strong>ימי א'-ה':</strong> 07:00 -
+                                        <strong>ימי א&apos;-ה&apos;:</strong> 07:00 -
                                         23:00
                                     </p>
                                     <p>
-                                        <strong>יום ו':</strong> 07:00 - 14:00
+                                        <strong>יום ו&apos;:</strong> 07:00 - 14:00
                                     </p>
                                     <p>
-                                        <strong>יום ש':</strong> מצאת השבת -
+                                        <strong>יום ש&apos;:</strong> מצאת השבת -
                                         23:00
                                     </p>
                                 </div>

@@ -189,7 +189,7 @@ const Home = () => {
                                         )}
                                     </div>
                                     <p className="text-gray-600 mb-4 italic">
-                                        "{testimonial.text}"
+                                        &ldquo;{testimonial.text}&rdquo;
                                     </p>
                                     <div>
                                         <h4 className="font-semibold">
