@@ -257,15 +257,16 @@ const Services = () => {
                                 </h3>
                                 <div className="space-y-2 text-gray-600">
                                     <p>
-                                        <strong>ימי א&apos;-ה&apos;:</strong> 07:00 -
-                                        23:00
+                                        <strong>ימי א&apos;-ה&apos;:</strong>{" "}
+                                        07:00 - 23:00
                                     </p>
                                     <p>
-                                        <strong>יום ו&apos;:</strong> 07:00 - 14:00
+                                        <strong>יום ו&apos;:</strong> 07:00 -
+                                        14:00
                                     </p>
                                     <p>
-                                        <strong>יום ש&apos;:</strong> מצאת השבת -
-                                        23:00
+                                        <strong>יום ש&apos;:</strong> מצאת השבת
+                                        - 23:00
                                     </p>
                                 </div>
                             </CardContent>
@@ -283,7 +284,7 @@ const Services = () => {
                     <p className="text-xl mb-8 opacity-90">
                         צרו קשר עכשיו וקבלו הצעת מחיר מותאמת אישית
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-row sm:flex-row gap-4 justify-center">
                         <Link href="/contact">
                             <Button
                                 variant="outline"

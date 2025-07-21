@@ -135,24 +135,25 @@
 @layer components {
   /* Atlas Hero Button */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-secondary text-white font-semibold py-4 px-8 rounded-xl;
+    @apply bg-gradient-to-r from-primary to-secondary text-white font-semibold;
+    @apply py-3 px-6 sm:py-4 sm:px-8 rounded-xl;
     @apply hover:shadow-[var(--shadow-strong)] transform hover:scale-105 transition-all duration-300;
   }
 
   /* Atlas Card */
   .atlas-card {
-    @apply bg-white rounded-xl p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)];
-    @apply transition-all duration-300 border border-border;
+    @apply bg-white rounded-xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)];
+    @apply p-4 sm:p-6 transition-all duration-300 border border-border;
   }
 
   /* Atlas Section */
   .atlas-section {
-    @apply py-16 px-4;
+    @apply py-8 sm:py-12 lg:py-16;
   }
 
   /* Atlas Container */
   .atlas-container {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   /* Atlas Gradient Text */

@@ -19,21 +19,21 @@ const Hero = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Content */}
                     <div className="text-white space-y-6">
-                        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                             <span className="block">משלוחים</span>
                             <span className="gradient-text">מקצועיים</span>
                             <span className="block">מדלת לדלת</span>
                         </h1>
 
-                        <p className="text-xl text-gray-200 leading-relaxed">
+                        <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
                             עם אטלס שילוח והפצה תקבלו שירות משלוחים מהיר, אמין
                             ומקצועי. אנחנו כאן כדי להעביר את החבילות שלכם בבטחה
                             ובמהירות הרבה ביותר.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                             <Link href="/contact">
-                                <Button className="btn-hero text-lg px-8 py-4 flex items-center space-x-reverse space-x-2">
+                                <Button className="btn-hero text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-reverse space-x-2">
                                     <span>הזמן משלוח עכשיו</span>
                                     <ArrowLeft className="h-5 w-5" />
                                 </Button>
@@ -41,7 +41,7 @@ const Hero = () => {
                             <Link href="/services">
                                 <Button
                                     variant="outline"
-                                    className="text-lg px-8 py-4 bg-white/10 border-white text-white hover:bg-white hover:text-gray-900"
+                                    className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-white/10 border-white text-white hover:bg-white hover:text-gray-900"
                                 >
                                     השירותים שאנו מציעים
                                 </Button>
@@ -49,7 +49,7 @@ const Hero = () => {
                         </div>
 
                         {/* Features */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8">
                             <div className="flex items-center space-x-reverse space-x-3">
                                 <Zap className="h-8 w-8 text-secondary" />
                                 <div>

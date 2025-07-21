@@ -91,17 +91,17 @@ const Home = () => {
             {/* Services Section */}
             <section className="atlas-section bg-gray-50">
                 <div className="atlas-container">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                             השירותים שלנו
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
                             מגוון שירותי משלוח מותאמים לכל צורך - מאיסוף מהיר
                             ועד משלוח עסקי מקצועי
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                         {services.map((service, index) => (
                             <Card
                                 key={index}
@@ -120,9 +120,9 @@ const Home = () => {
                         ))}
                     </div>
 
-                    <div className="text-center mt-8">
+                    <div className="text-center mt-6 sm:mt-8">
                         <Link href="/services">
-                            <Button className="btn-hero">
+                            <Button className="btn-hero px-6 py-3 sm:px-8 sm:py-4">
                                 צפה בכל השירותים
                                 <ArrowLeft className="mr-2 h-4 w-4" />
                             </Button>
@@ -134,17 +134,17 @@ const Home = () => {
             {/* Why Choose Us Section */}
             <section className="atlas-section">
                 <div className="atlas-container">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                             למה לבחור באטלס שילוח והפצה?
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
                             אנחנו מתחייבים לספק שירות משלוחים ברמה הגבוהה ביותר
                             עם תשומת לב לכל פרט
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
                         {advantages.map((advantage, index) => (
                             <div key={index} className="text-center">
                                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -165,16 +165,16 @@ const Home = () => {
             {/* Testimonials Section */}
             <section className="atlas-section bg-gray-50">
                 <div className="atlas-container">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                             מה אומרים הלקוחות שלנו
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-lg sm:text-xl text-gray-600 px-4">
                             חוות דעת של לקוחות מרוצים שבחרו באטלס שילוח והפצה
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                         {testimonials.map((testimonial, index) => (
                             <Card key={index} className="atlas-card">
                                 <CardContent className="p-6">
@@ -218,23 +218,23 @@ const Home = () => {
             {/* CTA Section */}
             <section className="atlas-section bg-gradient-to-r from-primary to-secondary text-white">
                 <div className="atlas-container text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         מוכנים להתחיל?
                     </h2>
-                    <p className="text-xl mb-8 opacity-90">
+                    <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 px-4">
                         צרו קשר עכשיו וקבלו הצעת מחיר מותאמת אישית לצרכים שלכם
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-row sm:flex-row gap-3 sm:gap-4 justify-center">
                         <Link href="/contact">
                             <Button
                                 variant="outline"
-                                className="bg-white text-primary hover:bg-gray-100 hover:text-primary text-lg px-8 py-4"
+                                className="bg-white text-primary hover:bg-gray-100 hover:text-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
                             >
                                 הזמנת משלוח
                             </Button>
                         </Link>
                         <Link href="/contact">
-                            <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-4 flex items-center space-x-reverse space-x-2">
+                            <Button className="bg-white text-primary hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-reverse space-x-2">
                                 <span>צרו קשר</span>
                                 <ArrowLeft className="h-5 w-5" />
                             </Button>

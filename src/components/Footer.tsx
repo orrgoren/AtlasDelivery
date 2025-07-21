@@ -5,9 +5,9 @@ import atlasLogo from "@/assets/atlas-logo.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-12">
+        <footer className="bg-gray-900 text-white py-8 sm:py-12">
             <div className="atlas-container">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
                         <Link
@@ -126,7 +126,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+                <div className="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
                     <p className="text-gray-400">
                         © 2025 אטלס שילוח והפצה. כל הזכויות שמורות.
                     </p>

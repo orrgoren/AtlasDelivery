@@ -228,7 +228,7 @@ const Customers = () => {
                         התחילו ליהנות משירות משלוחים מקצועי ואמין עוד היום
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-row sm:flex-row gap-4 justify-center">
                         <Link href="/contact">
                             <Button
                                 variant="outline"

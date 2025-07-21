@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50 border-b">
             <div className="atlas-container">
-                <div className="flex justify-between items-center h-24">
+                <div className="flex justify-between items-center h-16 sm:h-20 lg:h-24">
                     {/* Logo */}
                     <Link
                         href="/"
@@ -34,19 +34,19 @@ const Navbar = () => {
                         <Image
                             src={atlasLogo}
                             alt="אטלס שילוח והפצה"
-                            className="h-24 w-auto"
+                            className="h-12 sm:h-16 lg:h-24 w-auto"
                             height={96}
                             // width={auto} is not allowed, so set width to a reasonable value or use atlasLogo.width
                             width={atlasLogo.width}
                         />
 
-                        <h2 className="text-2xl font-bold text-[#6189BD]">
+                        <h2 className="text-base xs:text-lg sm:text-xl lg:text-2xl font-bold text-[#6189BD] hidden xs:block">
                             אטלס שילוח והפצה
                         </h2>
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-reverse space-x-12">
+                    <div className="hidden lg:flex items-center space-x-reverse space-x-8 xl:space-x-12">
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
@@ -69,7 +69,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    <div className="lg:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="text-gray-600 hover:text-primary"
@@ -85,7 +85,7 @@ const Navbar = () => {
 
                 {/* Mobile Navigation */}
                 {isOpen && (
-                    <div className="md:hidden pb-4">
+                    <div className="lg:hidden pb-4 border-t border-gray-200 mt-4 pt-4">
                         <div className="flex flex-col space-y-4">
                             {navItems.map((item) => (
                                 <Link
