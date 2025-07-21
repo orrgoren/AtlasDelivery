@@ -7,7 +7,6 @@ import heroImage from "@/assets/hero-image.png";
 const Hero = () => {
     return (
         <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-            {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${heroImage.src})` }}
