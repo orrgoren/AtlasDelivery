@@ -113,7 +113,7 @@ const urgencyOptions = [
     {
         id: "tomorrow" as UrgencyType,
         icon: Calendar,
-        title: "למחר",
+        title: "מהיום למחר",
         description: "מסירה ביום העסקים הבא",
         badge: null,
         badgeColor: "",

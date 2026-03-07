@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, Clock, Zap } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Sunrise, Zap } from "lucide-react";
 import Link from "next/link";
 
 import heroImage from "@/assets/hero-image.png";
@@ -48,11 +48,11 @@ const Hero = () => {
                         </div>
 
                         {/* Features */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8">
-                            <div className="flex items-center space-x-reverse space-x-3">
-                                <Zap className="h-8 w-8 text-secondary" />
+                        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-6 pt-3 sm:pt-8">
+                            <div className="flex items-center space-x-reverse space-x-2">
+                                <Zap className="h-4 w-4 text-secondary" />
                                 <div>
-                                    <h3 className="font-semibold">
+                                    <h3 className="font-semibold text-sm">
                                         משלוח מהיר
                                     </h3>
                                     <p className="text-sm text-gray-300">
@@ -60,22 +60,33 @@ const Hero = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex items-center space-x-reverse space-x-3">
-                                <Clock className="h-8 w-8 text-secondary" />
+                            <div className="flex items-center space-x-reverse space-x-2">
+                                <Clock className="h-4 w-4 text-secondary" />
                                 <div>
-                                    <h3 className="font-semibold">
+                                    <h3 className="font-semibold text-sm">
                                         משלוח מהיום להיום
                                     </h3>
                                     <p className="text-sm text-gray-300">
-                                        משלוח באותו יום עסקים
+                                        משלוח באותו יום
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex items-center space-x-reverse space-x-3">
-                                <Calendar className="h-8 w-8 text-secondary" />
+                            <div className="flex items-center space-x-reverse space-x-2">
+                                <Sunrise className="h-4 w-4 text-secondary" />
                                 <div>
-                                    <h3 className="font-semibold">
-                                        משלוח בין 1 - 3 ימים
+                                    <h3 className="font-semibold text-sm">
+                                        משלוח מהיום למחר
+                                    </h3>
+                                    <p className="text-sm text-gray-300">
+                                        עד יום עסקים אחד
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-center space-x-reverse space-x-2">
+                                <Calendar className="h-4 w-4 text-secondary" />
+                                <div>
+                                    <h3 className="font-semibold text-sm">
+                                        משלוח עד 3 ימים
                                     </h3>
                                     <p className="text-sm text-gray-300">
                                         עפ״י דרישת הלקוח
