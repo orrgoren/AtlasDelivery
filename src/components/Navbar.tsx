@@ -14,6 +14,7 @@ const Navbar = () => {
 
     const navItems = [
         { name: "דף הבית", path: "/" },
+        { name: "הזמנת משלוח", path: "/order" },
         { name: "אודות", path: "/about" },
         { name: "השירותים שלנו", path: "/services" },
         { name: "שאלות נפוצות", path: "/faq" },
@@ -46,7 +47,7 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center space-x-reverse space-x-8 xl:space-x-12">
+                    <div className="hidden lg:flex items-center gap-8 xl:gap-12">
                         {navItems.map((item) => (
                             <Link
                                 key={item.path}
