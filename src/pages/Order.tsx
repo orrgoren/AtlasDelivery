@@ -96,18 +96,18 @@ const vehicleOptions = [
 const urgencyOptions = [
     {
         id: "sameday" as UrgencyType,
-        icon: Zap,
+        icon: Clock,
         title: "באותו יום",
         description: "איסוף ומסירה עד 23:00 היום",
-        badge: "הכי מהיר",
+        badge: "מומלץ",
         badgeColor: "bg-green-100 text-green-700",
     },
     {
         id: "express" as UrgencyType,
-        icon: Clock,
+        icon: Zap,
         title: "אקספרס / דחוף",
         description: "מסירה תוך 3 שעות מרגע האיסוף",
-        badge: "מומלץ",
+        badge: "הכי מהיר",
         badgeColor: "bg-primary/10 text-primary",
     },
     {
@@ -115,8 +115,8 @@ const urgencyOptions = [
         icon: Calendar,
         title: "מהיום למחר",
         description: "מסירה ביום העסקים הבא",
-        badge: null,
-        badgeColor: "",
+        badge: "גמיש",
+        badgeColor: "bg-primary/10 text-primary",
     },
     {
         id: "threedays" as UrgencyType,
