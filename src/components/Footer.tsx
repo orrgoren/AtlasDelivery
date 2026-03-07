@@ -66,7 +66,7 @@ const Footer = () => {
                                 אודות
                             </Link>
                             <Link
-                                href="/contact"
+                                href="/order"
                                 className="block text-gray-300 hover:text-primary transition-colors"
                             >
                                 הזמנת משלוח

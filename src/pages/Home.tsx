@@ -225,7 +225,7 @@ const Home = () => {
                         צרו קשר עכשיו וקבלו הצעת מחיר מותאמת אישית לצרכים שלכם
                     </p>
                     <div className="flex flex-row sm:flex-row gap-3 sm:gap-4 justify-center">
-                        <Link href="/contact">
+                        <Link href="/order">
                             <Button
                                 variant="outline"
                                 className="bg-white text-primary hover:bg-gray-100 hover:text-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"

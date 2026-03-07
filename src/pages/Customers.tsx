@@ -229,7 +229,7 @@ const Customers = () => {
                     </p>
 
                     <div className="flex flex-row sm:flex-row gap-4 justify-center">
-                        <Link href="/contact">
+                        <Link href="/order">
                             <Button
                                 variant="outline"
                                 className="bg-white text-primary hover:bg-gray-100 hover:text-primary text-lg px-8 py-4"

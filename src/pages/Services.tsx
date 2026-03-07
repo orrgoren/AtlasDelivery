@@ -173,7 +173,7 @@ const Services = () => {
                                         )}
                                     </ul>
 
-                                    <Link href="/contact">
+                                    <Link href="/order">
                                         <Button className="w-full btn-hero">
                                             הזמן עכשיו
                                         </Button>
@@ -285,7 +285,7 @@ const Services = () => {
                         צרו קשר עכשיו וקבלו הצעת מחיר מותאמת אישית
                     </p>
                     <div className="flex flex-row sm:flex-row gap-4 justify-center">
-                        <Link href="/contact">
+                        <Link href="/order">
                             <Button
                                 variant="outline"
                                 className="bg-white text-primary hover:bg-gray-100 hover:text-primary text-lg px-8 py-4"

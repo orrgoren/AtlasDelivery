@@ -31,7 +31,7 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                            <Link href="/contact">
+                            <Link href="/order">
                                 <Button className="btn-hero text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center space-x-reverse space-x-2">
                                     <span>הזמן משלוח עכשיו</span>
                                     <ArrowLeft className="h-5 w-5" />
