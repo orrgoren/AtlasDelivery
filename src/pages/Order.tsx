@@ -51,9 +51,9 @@ const VEHICLE_BASE: Record<VehicleType, number> = {
 };
 
 const KM_RATE: Record<UrgencyType, number> = {
-    express: 5.5,
-    sameday: 4,
-    tomorrow: 3.5,
+    express: 5,
+    sameday: 3.5,
+    tomorrow: 3,
     threedays: 2.5,
 };
 
